@@ -211,14 +211,14 @@ class Hospital {
 }
 let hospital = Hospital()
 
-let patient1 = Patient(firstName: "Алина", lastName: "Жапарова", disease: "Ковид")
+let patient1 = Patient(firstName: "Алина", lastName: "Рисова", disease: "Ковид")
 let patient2 = Patient(firstName: "Рустам", lastName: "Маликов", disease: "Ковид")
 
 hospital.addPatient(patient: patient1)
 hospital.addPatient(patient: patient2)
 
-if let disease = hospital.displayDisease(firstName: "Алина", lastName: "Жапарова") {
-  print("Болезень Алина Жапаровой: \(disease)")
+if let disease = hospital.displayDisease(firstName: "Алина", lastName: "Рисова") {
+  print("Болезень Алины Рисовой: \(disease)")
 }
 
 hospital.deletePatient(firstName: "Алина", lastName: "Жапарова")
@@ -226,3 +226,6 @@ hospital.deletePatient(firstName: "Алина", lastName: "Жапарова")
 if hospital.search(firstName: "Алина", lastName: "Жапарова") == nil {
   print("Алина Жапарова была удалена")
 }
+
+
+
